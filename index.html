@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    mont: "'Montserrat', sans-serif",
+                },
+              colors: {
+                darkblue: '#05041B',
+                grayish: '#d6d8f3',
+                dirtywhite: '#f1f1f1',
+                borderr: '#252440',
+                blacky: '#000000',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body class="font-mont">
+    
+    <section class="flex">
+       <!-- leftcolumn -->
+        <div class="bg-darkblue w-48 h-screen text-white">
+            <h1 class="p-5 text-lg font-bold text-center">Dashboard</h1>
+
+            <ul class="mt-20">
+                <li class="flex align-center justify-center gap-2 border-b-2 pb-2 mx-4 border-borderr pt-3 mt-2 hover:bg-sky-700">
+
+                    <img class="w-5 h-5" src="icons/Tasklist.png" alt="">
+                    <a class="text-base font-semibold" href="#">Section</a>
+
+                <li class="flex align-center justify-center gap-2 border-b-2 pb-2 mx-4 border-borderr pt-3 mt-2 hover:bg-sky-700">
+
+                  <img class="w-5 h-5" src="icons/Tasklist.png" alt="">         
+                    <a class="text-base font-semibold" href="#">Subject</a>
+                </li>
+
+                <li class="flex align-center justify-center gap-2 border-b-2 pb-2 mx-4 border-borderr pt-3 mt-2 hover:bg-sky-700">
+
+                  <img class="w-5 h-5" src="icons/Student Center.png" alt="">         
+                    <a class="text-base font-semibold" href="#">Student</a>
+                </li>
+
+                <li class="flex align-center justify-center gap-2 border-b-2 pb-2 mx-4 border-borderr pt-3 mt-2 hover:bg-sky-700">
+
+                  <img class="w-5 h-5 ml-4" src="icons/School Director.png" alt="">         
+                    <a class="text-base font-semibold" href="#">Instructor</a>
+                </li>
+
+                <li class="flex align-center justify-center gap-2 border-b-2 pb-2 mx-4 border-borderr pt-3 mt-2 hover:bg-sky-700">
+
+                  <img class="w-5 h-5 ml-5" src="icons/School Director.png" alt="">         
+                    <a class="text-base font-semibold" href="#">Instructor Subjects</a>
+                </li>
+                
+                  
+            </ul>
+
+        </div>
+
+
+        <!-- rightcolumn -->
+        <div class="container bg-dirtywhite">
+
+          <!-- header -->
+          <div class="w-full flex align-center justify-between mx-auto bg-white py-2 px-12">
+
+            <a href="index.html"><img class="w-40" src="icons/CHCC logo.png" alt=""></a>
+
+            <a href="#"><img class="w-12 h-12" src="icons/user-profile.png" alt=""></a>
+
+          </div>
+
+          <!-- content -->
+            <div class="w-11/12 h-5/6 bg-white m-auto my-3 rounded-xl flex">
+              
+              <div class="flex flex-col w-5/12 mx-10 py-10 gap-4">
+                <h1 class="text-blacky font-bold">Create Subject</h1>
+
+                <input class="py-2 border-2 rounded-lg px-3 mt-5" type="text" placeholder="Subject Name">
+
+                <input class="py-2 border-2 rounded-lg px-3" type="text" placeholder="Subject Code">
+
+                <input class="py-2 border-2 rounded-lg px-3" type="text" placeholder="Subject Name">
+
+                <button class="text-white bg-darkblue py-2 rounded-lg font-semibold hover:bg-sky-700">Submit</button>
+              </div>
+
+              <!-- content division -->
+              <div class="border h-5/6 my-auto">
+                <!-- line -->
+              </div>
+
+              <div class="flex mx-10 py-10 gap-20">
+
+                <div class="flex w-6/12 flex-col gap-2">
+                      <h1 class="text-blacky font-bold mb-6">Subject</h1>
+
+                      <p>Mia</p>
+                      <p>Joanna</p>
+                      <p>Leonie</p>
+                      <p>Miller</p>
+                      <p>White</p>
+                      <p>Clark</p>
+                      <p>Lee</p>
+                      <p>Mia</p>
+                      <p>Joanna</p>
+                      <p>Leonie</p>
+                </div>
+
+
+                 <div class="flex flex-col gap-2">
+                      <h1 class="text-blacky font-bold mb-6">Section</h1>
+
+                      <p>Mia</p>
+                      <p>Joanna</p>
+                      <p>Leonie</p>
+                      <p>Miller</p>
+                      <p>White</p>
+                      <p>Clark</p>
+                      <p>Lee</p>
+                      <p>Mia</p>
+                      <p>Joanna</p>
+                      <p>Leonie</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
