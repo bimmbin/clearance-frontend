@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHCC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    mont: "'Montserrat', sans-serif",
+                },
+              colors: {
+                darkblue: '#05041B',
+                grayish: '#d6d8f3',
+                dirtywhite: '#f1f1f1',
+                borderr: '#252440',
+                blacky: '#000000',
+                tableborderr: 'B5B5B5',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body class="font-mont">
+    
+    <section class="flex">
+       <!-- leftcolumn -->
+        <div class="bg-darkblue w-48 h-screen text-white">
+            <h1 class="p-5 text-lg font-bold text-center">Dashboard</h1>
+
+            <ul class="mt-20">
+                <li class="flex align-center justify-center gap-2 border-b-2 pb-2 mx-4 border-borderr pt-3 mt-2 hover:bg-sky-700">
+
+                    <img class="w-5 h-5" src="icons/Tasklist.png" alt="">
+                    <a class="text-base font-semibold" href="#">Section</a>
+
+                <li class="flex align-center justify-center gap-2 border-b-2 pb-2 mx-4 border-borderr pt-3 mt-2 hover:bg-sky-700">
+
+                  <img class="w-5 h-5" src="icons/Tasklist.png" alt="">         
+                    <a class="text-base font-semibold" href="#">Subject</a>
+                </li>
+
+                <li class="flex align-center justify-center gap-2 border-b-2 pb-2 mx-4 border-borderr pt-3 mt-2 hover:bg-sky-700">
+
+                  <img class="w-5 h-5" src="icons/Student Center.png" alt="">         
+                    <a class="text-base font-semibold" href="#">Student</a>
+                </li>
+
+                <li class="flex align-center justify-center gap-2 border-b-2 pb-2 mx-4 border-borderr pt-3 mt-2 hover:bg-sky-700">
+
+                  <img class="w-5 h-5 ml-4" src="icons/School Director.png" alt="">         
+                    <a class="text-base font-semibold" href="#">Instructor</a>
+                </li>
+
+                <li class="flex align-center justify-center gap-2 border-b-2 pb-2 mx-4 border-borderr pt-3 mt-2 hover:bg-sky-700">
+
+                  <img class="w-5 h-5 ml-6" src="icons/School Director.png" alt="">         
+                    <a class="text-base font-semibold" href="#">Instructor Subjects</a>
+                </li>
+                
+                  
+            </ul>
+
+        </div>
+
+
+        <!-- rightcolumn -->
+        <div class="w-screen bg-dirtywhite">
+
+          <!-- header -->
+          <div class="w-full flex align-center justify-between mx-auto bg-white py-2 px-12">
+
+            <a href="index.html"><img class="w-40" src="icons/CHCC logo.png" alt=""></a>
+
+            <a href="#"><img class="w-12 h-12" src="icons/user-profile.png" alt=""></a>
+
+          </div>
+
+          <!-- content -->
+            <div class="w-11/12 h-5/6 bg-white m-auto my-3 rounded-xl flex">
+              
+              <div class="flex flex-col w-7/12 mx-10 py-20 gap-6">
+                <h1 class="text-blacky font-bold text-center text-2xl">Create Department Officer Account</h1>
+
+                <input class="py-3 border-2 rounded-lg px-3 mt-5" type="number" placeholder="Employee Number">
+
+                <input class="py-3 border-2 rounded-lg px-3" type="text" placeholder="First Name">
+
+                <input class="py-3 border-2 rounded-lg px-3" type="text" placeholder="Last Name">
+
+                <input class="py-3 border-2 rounded-lg px-3" type="text" placeholder="Middle Name">
+
+                <input class="py-3 border-2 rounded-lg px-3" type="text" placeholder="Sex">
+ 
+                  <select class="py-3 border-2 rounded-lg px-3 cursor-pointer" name="department" id="department">
+
+                    <option class="bg-darkblue text-white" value="BSCS">BSCS</option>
+                    <option class="bg-darkblue text-white" value="EDUCATION">EDUCATION</option>
+                    <option class="bg-darkblue text-white" value="BSCRIM">BSCRIM</option>
+                    <option class="bg-darkblue text-white" value="BSHM">BSHM</option>
+                    <option class="bg-darkblue text-white" value="BSBA">BSBA</option>
+                  </select>
+                
+                <button class="text-white bg-darkblue py-3 rounded-lg font-semibold hover:bg-sky-700">Submit</button>
+              </div>
+
+              <!-- content division -->
+              <div class="border h-5/6 my-auto">
+                <!-- line -->
+              </div>
+
+              <div class="flex flex-col w-full py-20 gap-6 align-center">
+                <h1 class="text-blacky font-bold mx-10 text-2xl">List of Department Officers</h1>
+
+                  <table class="text-center mx-10 mt-10 w-11/12">
+                    <thead>
+                      <tr class="space-y-3">
+                        <th>Name</th>
+                        <th>Employee No.</th>
+                        <th>Department</th>
+                        <th class="flex justify-center pb-3">Action</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="space-y-6 border text-center">
+                      <tr class="">
+                        <td>ASD</td>
+                        <td>123</td>
+                        <td>Clinic</td>
+                        <td class="flex gap-2 justify-center align-center p-3">
+                          <img class="cursor-pointer hover:bg-sky-700" src="/clearance-frontend/icons/edit-icon.png" alt="">
+
+                          <img class="cursor-pointer hover:bg-sky-700" src="/clearance-frontend/icons/setting-icon.png" alt="">
+                        </td>
+                      </tr>
+                    </tbody>
+
+                    <tbody class="space-y-6 border text-center">
+                      <tr class="">
+                        <td>ASD</td>
+                        <td>123</td>
+                        <td>Clinic</td>
+                        <td class="flex gap-2 justify-center align-center p-3">
+                          <img class="cursor-pointer hover:bg-sky-700" src="/clearance-frontend/icons/edit-icon.png" alt="">
+
+                          <img class="cursor-pointer hover:bg-sky-700" src="/clearance-frontend/icons/setting-icon.png" alt="">
+                        </td>
+                      </tr>
+                    </tbody>
+
+                    <tbody class="space-y-6 border text-center">
+                      <tr class="">
+                        <td>ASD</td>
+                        <td>123</td>
+                        <td>Clinic</td>
+                        <td class="flex gap-2 justify-center align-center p-3">
+                          <img class="cursor-pointer hover:bg-sky-700" src="/clearance-frontend/icons/edit-icon.png" alt="">
+
+                          <img class="cursor-pointer hover:bg-sky-700" src="/clearance-frontend/icons/setting-icon.png" alt="">
+                        </td>
+                      </tr>
+                    </tbody>
+
+                    <tbody class="space-y-6 border text-center">
+                      <tr class="">
+                        <td>ASD</td>
+                        <td>123</td>
+                        <td>Clinic</td>
+                        <td class="flex gap-2 justify-center align-center p-3">
+                          <img class="cursor-pointer hover:bg-sky-700" src="/clearance-frontend/icons/edit-icon.png" alt="">
+
+                          <img class="cursor-pointer hover:bg-sky-700" src="/clearance-frontend/icons/setting-icon.png" alt="">
+                        </td>
+                      </tr>
+                    </tbody>
+              </div>
+        </div>
+    </section>
+</body>
+</html>
