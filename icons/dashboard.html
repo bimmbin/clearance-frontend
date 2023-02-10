@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Department Office Account</title>
+    <title>CHCC</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,40 +34,36 @@
     
     <section class="flex">
        <!-- leftcolumn -->
-       <div class="bg-darkblue w-80 h-screen text-white">
-        <h1 class="p-5 text-2xl font-bold text-center">Dashboard</h1>
+        <div class="bg-darkblue w-80 h-screen text-white">
+            <h1 class="p-5 text-2xl font-bold text-center">Dashboard</h1>
 
             <ul class="mt-20">
-              <li class="flex gap-5 border-b-2 pl-8 pb-4 border-borderr mx-4 pt-5 mt-2 hover:bg-sky-700 cursor-pointer">
 
-                <img class="w-7 h-7" src="icons/Tasklist.png" alt="">         
-                  <a class="text-xl font-bold" href="#">Section</a>
-              </li>
-  
-              <li class="flex gap-5 border-b-2 pb-4 ml-4 mr-4 px-2 border-borderr pt-5 pl-8 hover:bg-sky-700 cursor-pointer">
-  
-                <img class="w-7 h-7" src="icons/Tasklist.png" alt="">         
-                  <a class="text-xl font-bold" href="#">Subject</a>
-              </li>
+                <li class="flex align-center gap-5 border-b-2 pl-8 pb-2 border-borderr mx-4 pt-3 mt-2 hover:bg-sky-700 cursor-pointer">
 
-              <li class="flex gap-5 border-b-2 pb-4 ml-4 mr-4 px-2 border-borderr pt-5 pl-8 hover:bg-sky-700 cursor-pointer">
-  
-                <img class="w-7 h-7" src="icons/Student Center.png" alt="">         
-                  <a class="text-xl font-bold" href="#">Student</a>
-              </li>
+                  <img class="w-7 h-7" src="icons/Student Center.png" alt="">         
+                    <a class="text-xl font-bold" href="#">Student</a>
+                </li>
 
-              <li class="flex gap-5 border-b-2 pb-4 ml-4 mr-4 px-2 border-borderr pt-5 pl-8 hover:bg-sky-700 cursor-pointer">
-  
-                <img class="w-7 h-7" src="icons/School Director.png" alt="">         
-                  <a class="text-xl font-bold" href="#">Instructor</a>
-              </li>
+                <li class="flex align-center gap-5 border-b-2 pb-2 ml-4 mr-4 px-2 border-borderr pt-3 mt-2 pl-8 hover:bg-sky-700 cursor-pointer">
+
+                  <img class="w-7 h-7" src="icons/School Director.png" alt="">         
+                    <a class="text-xl font-bold" href="#">Department</a>
+                </li>
+
+                <li class="flex align-center gap-5 pb-2 mx-4 pl-8 border-borderr pt-3 mt-2 hover:bg-sky-700 relative cursor-pointer" id="clearance">
+
+                  <img class="w-7 h-7" src="icons/School Director.png" alt="">         
+
+                    <a class="text-xl font-bold" href="#">Clearance</a>
+
+                    <ul class="absolute top-14 right-0 gap-3 flex flex-col hidden" id="show">
+                      <li class="hover:bg-sky-700 text-lg font-semibold px-2 py-3"><a href="#"> - Approved</a></li>
+                      <li class="hover:bg-sky-700 text-lg font-semibold px-2 py-3"><a href="#"> - Disapproved</a></li>
+                      <li class="hover:bg-sky-700 text-lg font-semibold px-2 py-3"><a href="#"> - Pending</a></li>
+                    </ul>
+                  </div>     
                 
-              <li class="flex gap-5 pb-4 ml-4 mr-4 px-2 border-borderr pt-5 pl-8 hover:bg-sky-700 cursor-pointer">
-  
-                <img class="w-7 h-7" src="icons/School Director.png" alt="">         
-                  <a class="text-xl font-bold" href="#">Instructor Subjects</a>
-              </li>
-                  
             </ul>
 
         </div>
@@ -213,5 +209,15 @@
               </div>
         </div>
     </section>
+
+    <script>
+
+        document.getElementById("clearance").addEventListener("click", function(event) {
+        event.preventDefault();
+        let dropdownMenu = document.getElementById("show");
+        dropdownMenu.classList.toggle("hidden");
+});
+
+    </script>
 </body>
 </html>
