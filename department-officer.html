@@ -38,18 +38,16 @@
             <h1 class="p-5 text-2xl font-bold text-center">Dashboard</h1>
 
             <ul class="mt-20">
-                <li class="flex align-center gap-5 pb-2 mx-4 pl-8 border-borderr pt-3 mt-2 hover:bg-sky-700 relative cursor-pointer" id="clearance">
+              <li class="relative flex align-center gap-5 pb-2 ml-4 mr-4 px-2 border-borderr pt-3 mt-2 pl-8 hover:bg-sky-700 cursor-pointer text-xl font-bold" id="rance">
+                <img class="w-7 h-7" src="icons/School Director.png" alt=""> 
 
-                  <img class="w-7 h-7" src="icons/School Director.png" alt="">         
-
-                    <a class="text-xl font-bold" href="#">Clearance</a>
-
-                    <ul class="absolute top-14 right-0 gap-3 flex flex-col hidden" id="show">
-                      <li class="hover:bg-sky-700 text-lg font-semibold px-2 py-3"><a href="#"> - Approved</a></li>
-                      <li class="hover:bg-sky-700 text-lg font-semibold px-2 py-3"><a href="#"> - Disapproved</a></li>
-                      <li class="hover:bg-sky-700 text-lg font-semibold px-2 py-3"><a href="#"> - Pending</a></li>
-                    </ul>
-                  </div>     
+                  Clearance
+                  <ul class="absolute top-14 right-0 hidden flex flex-col gap-6 text-white py-2 w-40 rounded-lg z-10 group-hover:block">
+                    <li class=""><a href="create-student-account.html">Approved</a></li>
+                    <li><a href="#">Disapproved</a></li>
+                    <li><a href="#">Pending</a></li>
+                  </ul>
+              </li>
                 
             </ul>
 
@@ -226,11 +224,13 @@
 
     <script>
 
-        document.getElementById("clearance").addEventListener("click", function(event) {
-        event.preventDefault();
-        let dropdownMenu = document.getElementById("show");
-        dropdownMenu.classList.toggle("hidden");
-});
+      let dropdown = document.querySelector('#rance');
+    
+      dropdown.addEventListener('click', function () {
+        dropdown.classList.toggle('bg-gray-800');
+        dropdown.classList.toggle('text-white');
+        dropdown.querySelector('ul').classList.toggle('hidden');
+      });
 
     </script>
 </body>
